@@ -10,17 +10,16 @@
 header  {
     background-color: rgb(22, 22, 255);
     color: white;
-    padding: 32px 0;
+    padding-bottom: 8px;
+    margin: auto auto;
     
- 
-
 }
 
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1024px;
+    padding: 32px 0;
     
 
 }
@@ -31,6 +30,7 @@ justify-content: center;
 align-items: center;
 max-width: 1024px;
 margin: 0 auto;
+
 }
 
 .menu-topo a {
@@ -46,9 +46,16 @@ margin: 0 auto;
 
 }
 
+#texto p, #texto h2 {
+
+    align-items: center;
+}
+
 .sobre #texto {
     padding-left: 16px;
     text-align: justify;
+    align-content: center;
+    
     
 }
 .sobre img {
@@ -61,9 +68,10 @@ margin: 0 auto;
 
 .produtos {
     display: grid;
-    grid-template-columns: repeat(3, 33.3%);
+    grid-template-columns: repeat(4, 24%);
     column-gap: 1%;
     row-gap: 5%;
+    max-width: 1024px;
 
     
     
@@ -74,11 +82,12 @@ margin: 0 auto;
 
 
 .produto {
-    width: 300px;
+    width: 100%;
     display: block;
-    padding: 16px;
+    padding: 8px;
     margin: 16px 0;;
     border: 1px solid darkblue;
+    border-radius: 10px;
 }
 
 .produto img {
@@ -121,18 +130,21 @@ width: 100%;
         row-gap: 5%;
 }
 
-    .header {
-        width:100%;
-    }
 
 }
 @media screen and (max-width:640px) {
+    
+
+
+
+
     .sobre {
     display: block;
     }
 
     .sobre #texto {
         padding-left: 0;
+
     
     }
     .produtos {
@@ -152,6 +164,8 @@ width: 100%;
         display: block;
         padding: 8px 0;
     }
+
+
     header {
         min-width: 320px;
     }
@@ -162,4 +176,11 @@ width: 100%;
     padding: 16px 0;
     margin: 0 0;
     }
+
+    .sobre #texto p{
+
+        padding-top: 16px;
+        
+        }
+
 }
